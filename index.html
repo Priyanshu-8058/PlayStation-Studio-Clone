@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome link CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper js link CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Swiper js script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="head">
+        <h1>SONY</h1>
+    </div>
+
+    <header>
+
+        <div class="navbar">
+            <div class="menu">|||</div>
+
+            <div class="mylogo">
+                <img src="Image/Mylogo.png" alt="PlayStation Logo">
+                <nav class="navlink">
+                    <a href="#">Games <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">PS5 <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">PS4 <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">Accessories <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">News <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">Store <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#">Support <i class="fa-solid fa-angle-down"></i></a>
+                </nav>
+            </div>
+
+            <div class="box2">
+                <button class="btn">Sign In</button>
+                <div><span><i class="fa-solid fa-magnifying-glass"></i></span></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="page1">
+            <div class="page1-content1">
+                <img src="./Image/ps-studios-dark-logo-01-en-11nov20.webp" alt="PlayStation Studios Logo">
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="page2">
+            <div class="page2-content1">
+
+                <div class="page2-box1">
+                    <h1>PlayStation Studios</h1>
+                    <p><strong>We love storytelling, it inspires and drives everything we do.</strong></p>
+
+                    <p>
+                        This organisation has defined gaming for generations. Our collective of studios and teams span
+                        the
+                        globe—and together—advance gaming and the positive impact it has on people’s lives.
+                    </p>
+
+                    <p>
+                        PlayStation Studios is the fabric that binds us together, with the boldness to explore, the
+                        passion
+                        to invent and reinvent, and the confidence to let imagination lead the way.
+                    </p>
+
+                    <p><span>Are you ready to join us?</span></p>
+                </div>
+
+                <div class="page2-box2">
+                    <iframe src="https://www.youtube.com/embed/UvXVA_ZLAWo" title="PlayStation Studios Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                        <picture>
+                            <source src="./Image/ps-studios-video-thumb-01-en-15feb22.webp">
+                        </picture>
+                    </iframe>
+                </div>
+
+            </div>
+
+            <div class="box2-content2">
+                <figure class="ceo-image"></figure>
+                <div class="ceo-content">
+                    <h1>"PlayStation Studios is a creator-led organisation. Our collective of studios and teams have
+                        built some of the most memorable gaming experiences imaginable. Together, we build worlds."</h1>
+
+                    <br>
+                    <br>
+                    <p>- Hermen Hulst <br>
+                        CEO, Studio Business Group</p>
+                </div>
+            </div>
+
+        </section>
+
+        <article class="carousal-container">
+            <h5>FROM PLAYSTATION STUDIOs</h5>
+            <h1>New releases and upcoming games</h1>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Image/astro-bot-keyart-01-en-23may24.webp" alt="">
+
+                        <div class="swiper-slide-content">
+                            <h1>ASTRO BOT</h1>
+                            <p>Out now. Released September 6, 2024.</p>
+                            <button>Buy now</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Image/helldivers-2-keyart-01-en-20jul23.webp" alt="">
+                        <div class="swiper-slide-content">
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Image/until-dawn-keyart-01-en-22jan24.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Image/horizon-adventures-keyart-01-en-17may24.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Image/death-stranding-2-keyart-01-en-22jan24.webp" alt="">
+                    </div>
+                </div>
+
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </article>
+
+    </main>
+
+
+
+
+    <!-- Swiper Script CDN  -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }, 
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>

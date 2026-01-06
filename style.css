@@ -1,0 +1,383 @@
+/* ================= FONT FACE ================= */
+
+@font-face {
+    font-family: "Latin";
+    src: url("./Font/SST-Light-latin.3cce6.woff2") format("woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Latin";
+    src: url("./Font/SST-Roman-latin.40348.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Latin";
+    src: url("./Font/SST-Medium-latin.1167b.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Latin";
+    src: url("./Font/SST-Bold-latin.7c968.woff2") format("woff2");
+    font-weight: 700;
+}
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Latin", sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+}
+
+.head {
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+}
+
+.head h1 {
+    padding: 0.4rem 1rem;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.mylogo {
+    display: flex;
+    align-items: center;
+}
+
+.mylogo img {
+    height: 40px;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 16px;
+    font-weight: 400;
+}
+
+.navlink a:hover {
+    color: rgb(27, 84, 229);
+}
+
+.box2 {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 8px 18px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 40px;
+    background-color: rgb(0, 112, 204);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(55, 55, 142);
+}
+
+/* ================= RESPONSIVE NAV ================= */
+
+@media (max-width: 700px) {
+    .head {
+        display: none;
+    }
+
+    .navlink,
+    .box2 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+/* ================= PAGE 1 (HERO) ================= */
+
+.page1 {
+    height: 130vh;
+    width: 100%;
+    position: relative;
+    background-image: url("/Image/ps-studios-banner-hero-desktop-01-en-01may24.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.page1-content1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+}
+
+.page1-content1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ================= PAGE 2 ================= */
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(18, 19, 20);
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.page2-content1 {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+
+.page2-box1 {
+    flex: 1;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    padding: 30px;
+    font-weight: 100;
+    color: white;
+}
+
+.page2-box1 h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.page2-box1 p {
+    margin-bottom: 14px;
+    line-height: 1.6;
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+.page2-box1 p strong {
+    color: #a39f9f;
+}
+
+.page2-box2 {
+    flex: 1;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    /* padding: 30px; */
+    font-weight: 100;
+    color: white;
+}
+
+.page2-box2 iframe {
+    width: 100%;
+    height: 100%;
+    /* min-height: 300px; */
+    border-radius: 20px;
+    border: none;
+}
+
+/* ================= CEO SECTION ================= */
+
+.box2-content2 {
+    max-width: 1100px;
+    height: 500px;
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    position: relative;
+}
+
+.ceo-image {
+    height: 480px;
+    width: 450px;
+    background-image: url("./Image/leadership-herman-hulst-image-block-01-en-15nov21.webp");
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.ceo-content {
+    position: absolute;
+    background-color: #000;
+    margin-left: 22rem;
+    margin-top: 18rem;
+    padding: 30px;
+    width: 850px;
+    height: 300px;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.ceo-content h1 {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 20px;
+    line-height: 2.2rem;
+}
+
+.ceo-content p {
+    padding-left: 20px;
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+
+/* ================= RESPONSIVE PAGE 2 ================= */
+
+@media (max-width: 900px) {
+    .page2-content1 {
+        flex-direction: column;
+    }
+
+    .box2-content2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ceo-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+
+.carousal-container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid white; */
+    padding: 80px 0;
+}
+
+.carousal-container>h5 {
+    text-align: center;
+    color: rgb(0, 95, 174);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    word-spacing: .1rem;
+    font-size: .9rem;
+}
+
+.carousal-container>h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 115vh;
+    padding: 40px 0;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide {
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+/* Side slides */
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.4;
+    transform: scale(0.85);
+}
+
+/* Active slide */
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+/* Navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+}
+
+.swiper-slide-content {
+    height: 150px;
+    width: 250px;
+    border: 2px solid white;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.swiper-slide-content h1{
+    font-size: 1rem;
+}
+
